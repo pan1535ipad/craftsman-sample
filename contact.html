@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木工舎 匠 | 職人の技と誠実さを伝える本格木造建築</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-loader">
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <span class="loader-logo">木工舎 匠</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="logo">木工舎 匠<span>- TAKUMI -</span></a>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" >ホーム</a>
+            <a href="business.html" >事業内容</a>
+            <a href="about.html" >会社概要</a>
+            <a href="contact.html" class="btn-contact class="active"">お問い合わせ</a>
+        </nav>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <section class="sub-hero" style="background: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80') center/cover fixed;">
+            <div class="sub-hero-content fade-in">
+                <h1>お問い合わせ・ご相談</h1>
+                <p>CONTACT & ACCESS</p>
+            </div>
+        </section>
+        
+        <section class="section contact-section">
+            <div class="container">
+                <div class="contact-box fade-in">
+                    <p>家づくりに関するご不安、工房での手刻みの見学、資金計画のご相談など、どうぞお気軽にお問い合わせください。</p>
+                    <div class="contact-tel">
+                        <span>お電話でのお問い合わせ（受付 9:00〜18:00）</span>
+                        <a href="tel:0120000000">📞 0120-000-000</a>
+                    </div>
+                    
+                    <div style="margin-bottom: 40px; font-size: 0.9rem; color: var(--gray-color); line-height: 1.8;">
+                        <p style="font-weight: bold; color: var(--primary-color); margin-bottom: 10px;">■ ご留意事項</p>
+                        <ul style="padding-left: 20px;">
+                            <li>ご入力いただいた個人情報は、お問い合わせへの対応以外の目的には使用いたしません。</li>
+                            <li>数日以内に担当者よりメールまたはお電話にて折り返しご連絡させていただきます。</li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label>お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" placeholder="例：木村 太郎" required>
+                        </div>
+                        <div class="form-group">
+                            <label>メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" placeholder="例：tarou@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>お電話番号</label>
+                            <input type="tel" id="phone" placeholder="例：090-0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label>お問い合わせ種別</label>
+                            <select id="category">
+                                <option value="consultation">家づくりのご相談</option>
+                                <option value="factory">工房見学希望</option>
+                                <option value="document">資料請求</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>お問い合わせ内容</label>
+                            <textarea id="message" rows="5" placeholder="ご相談内容やご希望の時期などをご記入ください"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="pageTop" class="page-top">▲</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">木工舎 匠</div>
+            <p>〒000-0000 奈良県〇〇市〇〇町1-2-3<br>TEL: 0120-000-000 / 水曜定休</p>
+            <p class="copyright">&copy; 2026 MOKKOSHA TAKUMI All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

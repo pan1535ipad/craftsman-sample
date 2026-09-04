@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木工舎 匠 | 職人の技と誠実さを伝える本格木造建築</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-loader">
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <span class="loader-logo">木工舎 匠</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="logo">木工舎 匠<span>- TAKUMI -</span></a>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" >ホーム</a>
+            <a href="business.html" class="active">事業内容</a>
+            <a href="about.html" >会社概要</a>
+            <a href="contact.html" class="btn-contact ">お問い合わせ</a>
+        </nav>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <section class="sub-hero" style="background: url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1920&q=80') center/cover fixed;">
+            <div class="sub-hero-content fade-in">
+                <h1>事業内容・職人の哲学</h1>
+                <p>BUSINESS & PHILOSOPHY</p>
+            </div>
+        </section>
+
+        <section class="section craft-section">
+            <div class="container">
+                <h2 class="sec-title fade-in">COMMITMENT<span>三つのこだわり</span></h2>
+                <div class="tab-buttons fade-in">
+                    <button class="tab-btn active" data-target="craft-1">01. 木の目利き</button>
+                    <button class="tab-btn" data-target="craft-2">02. 手刻みの技</button>
+                    <button class="tab-btn" data-target="craft-3">03. 自然素材</button>
+                </div>
+                <div class="tab-content-container fade-in">
+                    <div class="tab-panel active" id="craft-1">
+                        <div class="tab-panel-grid">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80" alt="木材の選定">
+                            <div class="tab-panel-text">
+                                <h3>一樹一樹の選定と厳格な目利き</h3>
+                                <p>産地に直接足を運び、時間をかけて自然乾燥された国産無垢材のみを厳選。木は一本一本癖が異なるため、家のどこに使うのが最適かを計算し尽くします。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="craft-2">
+                        <div class="tab-panel-grid">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="手刻みの技">
+                            <div class="tab-panel-text">
+                                <h3>機械に頼らない伝統の「手刻み」</h3>
+                                <p>プレカット全盛の現代であえて職人がノミとカンナを振るい、継手や仕口を刻みます。地震の揺れをしなやかに受け止める強固な躯体を実現します。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="craft-3">
+                        <div class="tab-panel-grid">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="自然素材の仕上げ">
+                            <div class="tab-panel-text">
+                                <h3>呼吸する漆喰と無垢の床材</h3>
+                                <p>壁には調湿・消臭機能を持つ本漆喰を採用。床には素足で歩きたくなる無垢の木を張り、時間が経つほどに味わい深い飴色へ育つ経年変化を楽しめます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery-section">
+            <div class="container">
+                <h2 class="sec-title fade-in">WORKS<span>施工事例</span></h2>
+                <div class="filter-buttons fade-in">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="new">注文住宅</button>
+                    <button class="filter-btn" data-filter="reno">古民家・リノベーション</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in" data-category="new">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="事例1" class="lightbox-trigger">
+                        <div class="gallery-info"><span class="tag">注文住宅</span><h3>大屋根と梁が織りなす平屋の住まい</h3><p>開放的な吹き抜けと、職人が手刻みした太い梁が美しい住まい。</p></div>
+                    </div>
+                    <div class="gallery-item fade-in" data-category="reno">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="事例2" class="lightbox-trigger">
+                        <div class="gallery-info"><span class="tag">リノベーション</span><h3>築80年古民家再生プロジェクト</h3><p>伝統的な構造を活かしつつ、現代の耐震基準と快適性を高めた改修工事。</p></div>
+                    </div>
+                    <div class="gallery-item fade-in" data-category="new">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="事例3" class="lightbox-trigger">
+                        <div class="gallery-info"><span class="tag">注文住宅</span><h3>無垢の木と漆喰が香る二階建て</h3><p>どこにいても木の温もりを感じられる、深呼吸したくなる住まい。</p></div>
+                    </div>
+                    <div class="gallery-item fade-in" data-category="new">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80" alt="事例4" class="lightbox-trigger">
+                        <div class="gallery-info"><span class="tag">注文住宅</span><h3>中庭を囲む光あふれるコートハウス</h3><p>プライバシーを確保しながら、家中どこにいても自然光が降り注ぐ設計。</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="拡大画像">
+    </div>
+
+    <div id="pageTop" class="page-top">▲</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">木工舎 匠</div>
+            <p>〒000-0000 奈良県〇〇市〇〇町1-2-3<br>TEL: 0120-000-000 / 水曜定休</p>
+            <p class="copyright">&copy; 2026 MOKKOSHA TAKUMI All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
