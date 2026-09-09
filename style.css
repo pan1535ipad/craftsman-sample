@@ -302,3 +302,7 @@ footer{position:relative;padding-top:80px!important;background:var(--primary-dar
 .craft-404{min-height:100vh;padding:130px 25px 80px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(90deg,rgba(8,22,14,.9),rgba(8,22,14,.4)),url("assets/craftsman-hero.jpg") 68% center/cover}
 .craft-404>div{max-width:760px}.craft-404 small{color:var(--accent-light);font-size:.65rem;font-weight:700;letter-spacing:.22em}.craft-404 strong{display:block;color:rgba(255,255,255,.13);font-family:"Noto Serif JP";font-size:clamp(9rem,26vw,18rem);line-height:.85}.craft-404 h1{margin:25px 0;font-size:clamp(2rem,4vw,3.5rem);line-height:1.55}.craft-404 p{color:rgba(255,255,255,.7);font-size:.8rem}.craft-404 a{display:inline-block;margin-top:30px;padding:16px 28px;color:var(--primary-dark);background:var(--accent-light);font-size:.78rem;font-weight:700}
 @media(max-width:560px){.craft-404{background-position:70% center}.craft-404 strong{font-size:9rem}}
+
+
+/* Japanese responsive typography */
+h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pretty;line-break:strict}@supports (word-break:auto-phrase){h1,h2,h3,p,li,dt,dd,figcaption{word-break:auto-phrase}}.sp-line{display:inline}@media(max-width:768px){.sp-line{display:block}}
