@@ -306,3 +306,13 @@ footer{position:relative;padding-top:80px!important;background:var(--primary-dar
 
 /* Japanese responsive typography */
 h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pretty;line-break:strict}@supports (word-break:auto-phrase){h1,h2,h3,p,li,dt,dd,figcaption{word-break:auto-phrase}}.sp-line{display:inline}@media(max-width:768px){.sp-line{display:block}}
+
+/* Mobile Japanese line-break refinement 2026-09-15 */
+@media(max-width:600px){
+  h1,h2,h3{text-wrap:balance;line-break:strict;overflow-wrap:normal}
+  p,li,dd{line-break:strict;overflow-wrap:anywhere}
+  p br{display:none}
+  h1 br,h2 br,h3 br{display:block}
+  .hero h1,.page-hero h1{font-size:clamp(2.35rem,11vw,3.2rem);line-height:1.45}
+  .section-title h2,.message h2{font-size:clamp(2rem,9.5vw,2.7rem);line-height:1.55}
+}
