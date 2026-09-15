@@ -316,3 +316,7 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
   .hero h1,.page-hero h1{font-size:clamp(2.35rem,11vw,3.2rem);line-height:1.45}
   .section-title h2,.message h2{font-size:clamp(2rem,9.5vw,2.7rem);line-height:1.55}
 }
+
+
+/* Meaning-based mobile line breaks — 2026-09-15 */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
