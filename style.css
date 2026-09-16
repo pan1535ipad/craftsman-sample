@@ -330,3 +330,18 @@ html{line-break:strict}
 h1,h2,h3,.lead,.catch,.copy{text-wrap:balance;overflow-wrap:normal;word-break:normal}
 p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
 @supports (word-break:auto-phrase){h1,h2,h3,.lead,.catch,.copy,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+
+
+/* Contemporary hero and semantic mobile headings */
+.semantic-heading>span{display:inline}
+@media(max-width:600px){
+  .semantic-heading .desktop-break{display:none}
+  .semantic-heading>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
+  .hero{background-position:58% center!important}
+  .hero-overlay{background:linear-gradient(180deg,rgba(8,22,14,.12) 8%,rgba(8,22,14,.42) 48%,rgba(8,22,14,.9) 100%)}
+  .hero-text{align-self:flex-end;margin-bottom:72px;text-align:left}
+  .hero-heading{font-size:clamp(2.3rem,10.5vw,2.8rem)!important;line-height:1.45!important;letter-spacing:.01em!important}
+  .service-heading{font-size:clamp(2rem,9vw,2.35rem)!important;line-height:1.5!important}
+  .sub-heading,.contact-heading{font-size:clamp(2.15rem,10vw,2.7rem)!important;line-height:1.5!important}
+  .sub-heading>span+span::before,.contact-heading>span+span::before{content:""}
+}
