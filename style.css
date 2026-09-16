@@ -345,3 +345,19 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   .sub-heading,.contact-heading{font-size:clamp(2.15rem,10vw,2.7rem)!important;line-height:1.5!important}
   .sub-heading>span+span::before,.contact-heading>span+span::before{content:""}
 }
+
+
+/* Mobile alignment, filter tabs and gallery headings */
+.gallery-heading>span{display:inline}
+@media(max-width:600px){
+  .home-services>.container{width:100%;padding-left:20px;padding-right:20px}
+  .home-services-head{width:100%;padding:0;margin-left:0;margin-right:0}
+  .home-service-grid{width:100%;margin-left:0;margin-right:0}
+
+  .filter-buttons{width:100%;max-width:100%;justify-content:flex-start;gap:10px;padding:0 0 12px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain}
+  .filter-buttons::-webkit-scrollbar{display:none}
+  .filter-btn{flex:0 0 auto;min-width:max-content;padding:12px 22px;white-space:nowrap;word-break:keep-all}
+
+  .gallery-heading>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
+  .gallery-info h3{font-size:clamp(1.05rem,5vw,1.2rem);line-height:1.7}
+}
