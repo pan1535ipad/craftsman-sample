@@ -361,3 +361,8 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   .gallery-heading>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
   .gallery-info h3{font-size:clamp(1.05rem,5vw,1.2rem);line-height:1.7}
 }
+
+/* Approved phrase units inherit the existing heading typography. */
+.phrase-heading{white-space:normal!important;text-wrap:wrap!important;word-break:normal;overflow-wrap:normal;min-width:0}
+.phrase-heading>.phrase-unit{display:inline-block!important;width:auto!important;max-width:none!important;white-space:nowrap!important;text-wrap:nowrap!important;word-break:normal;overflow-wrap:normal;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin:0}
+.phrase-heading>wbr{display:inline}

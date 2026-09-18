@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     acceptNode(node) {
       const parent = node.parentElement;
       pattern.lastIndex = 0;
-      return parent && !parent.closest("script,style,textarea,.term-keep") && pattern.test(node.data)
+      return parent && !parent.closest("script,style,textarea,.term-keep,.phrase-heading") && pattern.test(node.data)
         ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     }
   });
